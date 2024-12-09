@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 import { menuItems } from '@/constant/Menu';
 import { Coffee } from 'lucide-react';
 import Heading from '../Heading/Heading';
@@ -9,13 +9,11 @@ export default function StarterMenu() {
       <div className="container mx-auto py-16 flex flex-col lg:flex-row gap-12">
         {/* Image Section */}
         <div className="w-full lg:w-[448px] mb-8 lg:mb-0">
-          <img 
-            src="/menu.png" 
+          <Image   src="/menu.png" 
             alt="Starter dish" 
             width={448}
             height={626}
-            className="w-full h-auto max-w-full rounded-lg shadow-lg"
-          />
+            className="w-full h-auto max-w-full rounded-lg shadow-lg" />
         </div>
         {/* Menu Content */}
         <div className="w-full lg:w-1/2 lg:pl-8">

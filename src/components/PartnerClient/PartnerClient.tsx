@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 import React from 'react'
 
 const partners = [
@@ -22,11 +22,12 @@ export default function PartnersAndClients() {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
         {partners.map((partner, index) => (
           <div key={index} className="flex justify-center">
-            <img
-              src={partner.logo}
+           <Image   src={partner.logo}
               alt={`${partner.name} logo`}
+              width={32}
+              height={24}
               className="max-h-24 sm:max-h-32 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-            />
+            /> 
           </div>
         ))}
       </div>
